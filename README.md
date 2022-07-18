@@ -18,6 +18,21 @@ replication - на некоторые
 Для получения зачета, вам необходимо предоставить скриншот из терминала (консоли), с выводом команды:
 
 docker node ls
+
+```
+pashi@pashi-docker:~/5_5/src/terraform$ ssh centos@51.250.93.246
+[centos@node01 ~]$ sudo -i
+[root@node01 ~]# docker node ls
+ID                            HOSTNAME             STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+udu2ucrvcgapq50snd6lezewl *   node01.netology.yc   Ready     Active         Reachable        20.10.17
+fx8tfqdv8m3s699wwqil7zkmo     node02.netology.yc   Ready     Active         Reachable        20.10.17
+zp3lmvi75wbxkfawta0qsuobe     node03.netology.yc   Ready     Active         Leader           20.10.17
+x2pm0dilzwp11tdq4fi16k3mc     node04.netology.yc   Ready     Active                          20.10.17
+e0wp7dd1dcivkohc8awyljd3r     node05.netology.yc   Ready     Active                          20.10.17
+od5lzoey752ojjztfshmd8qx3     node06.netology.yc   Ready     Active                          20.10.17
+[root@node01 ~]# 
+
+```
 Задача 3
 Создать ваш первый, готовый к боевой эксплуатации кластер мониторинга, состоящий из стека микросервисов.
 
